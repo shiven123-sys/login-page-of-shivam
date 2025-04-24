@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fancy Login Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">🌙</div>
+  <div class="login-bg"></div>
+  <main class="login-container">
+    <form class="login-form" id="loginForm" autocomplete="off">
+      <h2>Welcome Back!</h2>
+      <p class="subtitle">Login to your account</p>
+      <div class="input-group">
+        <input type="email" id="email" required />
+        <label for="email">Email</label>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" required />
+        <label for="password">Password</label>
+      </div>
+      <button type="submit" class="login-btn">Log In</button>
+      <div class="divider"><span>or</span></div>
+      <div class="social-login">
+        <button type="button" class="social-btn google">G</button>
+        <button type="button" class="social-btn facebook">f</button>
+        <button type="button" class="social-btn twitter">t</button>
+      </div>
+      <div class="login-links">
+        <a href="#">Forgot password?</a>
+        <span>·</span>
+        <a href="#">Create account</a>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
